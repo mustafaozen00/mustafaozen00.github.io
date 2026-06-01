@@ -17,9 +17,9 @@
         .main-content { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .section { margin-bottom: 35px; }
         .section h2 { color: #1e3d59; border-bottom: 2px solid #1e3d59; padding-bottom: 5px; margin-bottom: 20px; font-size: 1.6rem; }
-        .job, .project { margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #ffc13b; }
-        .job h4, .project h4 { font-size: 1.15rem; color: #1e3d59; }
-        .job .company, .project .tech { font-size: 0.9rem; color: #777; font-weight: bold; margin-bottom: 5px; }
+        .job, .project, .blog-post { margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #ffc13b; }
+        .job h4, .project h4, .blog-post h4 { font-size: 1.15rem; color: #1e3d59; }
+        .job .company, .project .tech, .blog-post .date { font-size: 0.9rem; color: #777; font-weight: bold; margin-bottom: 5px; }
         .tech-badge { display: inline-block; background: #eef2f5; color: #1e3d59; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; margin: 4px; font-weight: 600; }
         .hobby-list { list-style-type: none; }
         .hobby-list li { margin-bottom: 8px; font-size: 0.95rem; }
@@ -35,9 +35,7 @@
     </header>
 
     <div class="container">
-        <!-- SOL PANEL: İLETİŞİM, YETENEKLER VE İLGİ ALANLARI -->
         <div class="sidebar">
-            
             <img src="profil.jpg" alt="Mustafa Özen" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto 20px auto; border: 3px solid #ffc13b;">
 
             <h3>İletişim</h3>
@@ -66,12 +64,11 @@
             </ul>
         </div>
 
-        <!-- SAĞ PANEL: DENEYİM, EĞİTİM VE PROJELER -->
         <div class="main-content">
             <div class="section">
                 <h2>Hakkımda</h2>
-                <p>Sahada kronik arıza çözen kıdemli bir tekniker ile, üretim süreçlerini kuşbakışı yöneten bir lider arasındaki o kritik köprüyü kuran kişiyim. İlaç sanayisi gibi sıfır hata ve yüksekGMP standartları gerektiren üretim tesislerinde 15 yıla yakın otomasyon, PLC ve motor sürücüleri tecrübem bulunuyor.</p>
-                <p style="margin-top: 10px;">Beni farklı kılan vizyonum; sadece arızalanan makineyi tamir edip bırakmamamdır. Üniversitede aldığım İşletme lisans eğitiminin getirdiği analitik bakış açısıyla, sahadaki sorunların kök nedenine iner, bakım maliyetlerini düşürecek kalıcı sistemler kurarım. Geleneksel yöntemlerle yetinmeyip, Python ve Streamlit kullanarak bizzat geliştirdiğim parça takip ve enerji izleme yazılımlarıyla çalıştığım fabrikanın dijital dönüşümüne öncülük ediyorum. Kriz anlarında soğukkanlılıkla inisiyatif alan, teknolojik yenilikleri sahaya entegre eden ve hem teknik ekibi hem de üretim verimliliğini her zaman bir adım ileriye taşımayı hedefleyen bir profesyonelim.</p>
+                <p>Sahada kronik arıza çözen kıdemli bir tekniker ile, üretim süreçlerini kuşbakışı yöneten bir lider arasındaki o kritik köprüyü kuran kişiyim. İlaç sanayisi gibi sıfır hata ve yüksek GMP standartları gerektiren üretim tesislerinde 15 yıla yakın otomasyon, PLC ve motor sürücüleri tecrübem bulunuyor.</p>
+                <p style="margin-top: 10px;">Beni farklı kılan vizyonum; sadece arızalanan makineyi tamir edip bırakmamamdır. Üniversitede aldığım İşletme lisans eğitiminin getirdiği analitik bakış açısıyla, sahadaki sorunların kök nedenine iner, bakım maliyetlerini düşürecek kalıcı sistemler kurarım. Geleneksel yöntemlerle yetinmeyip, Python ve Streamlit kullanarak bizzat geliştirdiğim parça takip ve enerji izleme yazılımlarıyla çalıştığım fabrikanın dijital dönüşümüne öncülük ediyorum.</p>
             </div>
 
             <div class="section">
@@ -79,12 +76,12 @@
                 <div class="job">
                     <h4>Kıdemli Elektrik-Elektronik Teknikeri</h4>
                     <div class="company">Sanovel İlaç Sanayi | 2022 - Halen</div>
-                    <p>Kritik ilaç üretim ve paketleme hatlarında anlık elektriksel ve mekanik arızalara müdahale edilmesi. PLC, servo motorlar ve sürücülerdeki kronik arızaların sahada bizzat tespiti, onarımı ve periyodik bakımların yapılması. Üretim duruşlarını minimuma indirmek için sistem iyileştirme projelerinin uygulanması.</p>
+                    <p>Kritik ilaç üretim ve paketleme hatlarında anlık elektriksel ve mekanik arızalara müdahale edilmesi. PLC, servo motorlar ve sürücülerdeki kronik arızaların tespiti, onarımı ve periyodik bakımları.</p>
                 </div>
                 <div class="job">
                     <h4>Elektrik-Elektronik Teknikeri</h4>
                     <div class="company">Endüstriyel Üretim Tesisleri | 2012 - 2022</div>
-                    <p>Farklı sektörlerdeki üretim hatlarında saha arıza tespiti, makine kurulumları, pano montajı, AG/OG sistem bakımları ve günlük operasyonel teknik süreçlerin yönetimi.</p>
+                    <p>Farklı sektörlerdeki üretim hatlarında saha arıza tespiti, pano montajı ve AG/OG sistem bakımları.</p>
                 </div>
             </div>
 
@@ -92,7 +89,7 @@
                 <h2>Eğitim Bilgileri</h2>
                 <div class="job">
                     <h4>İşletme Bölümü (Lisans - 4 Yıllık)</h4>
-                    <p>Teknik saha tecrübemi yönetimsel beceriler, organizasyon, maliyet analizi ve süreç yönetimi konularıyla destekleyen vizyoner lisans eğitimi.</p>
+                    <p>Teknik tecrübemi yönetimsel beceriler ve süreç yönetimiyle destekleyen vizyoner lisans eğitimi.</p>
                 </div>
                 <div class="job">
                     <h4>Endüstriyel Elektronik (Önlisans - 2 Yıllık)</h4>
@@ -104,13 +101,27 @@
                 <h2>Geliştirdiğim Yazılım Projeleri</h2>
                 <div class="project">
                     <h4>Endüstriyel Parça Takip Sistemi</h4>
-                    <div class="tech">Teknolojiler: Python, Streamlit, Pandas, Openpyxl</div>
-                    <p>Fabrika bakım departmanı için tamire gönderilen kritik elektronik bileşenlerin takibini, maliyet analizini ve gecikme alarmlarını tek merkezden yöneten ağ tabanlı kurumsal dashboard yazılımı.</p>
+                    <div class="tech">Teknolojiler: Python, Streamlit, Pandas</div>
+                    <p>Tamire gönderilen kritik elektronik bileşenlerin takibini, maliyet analizini ve gecikme alarmlarını yöneten dashboard yazılımı.</p>
                 </div>
                 <div class="project">
                     <h4>Janitza Enerji Analizörü İzleme Arayüzü</h4>
                     <div class="tech">Teknolojiler: Python, Modbus/TCP, Plotly</div>
-                    <p>Fabrikadaki enerji analizörlerinden anlık veri çekerek yük tüketim grafiklerini ve güç kalitesini canlı olarak ekrana basan SCADA benzeri izleme sistemi.</p>
+                    <p>Enerji analizörlerinden anlık veri çekerek yük tüketim grafiklerini canlı olarak ekrana basan SCADA benzeri izleme sistemi.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Arıza Günlüğü & Teknik Notlar</h2>
+                <div class="blog-post">
+                    <h4>Modbus/TCP Haberleşmesinde Zaman Aşımı (Timeout) Sorunu ve Çözümü</h4>
+                    <div class="date">Haziran 2026 | Kategori: Endüstriyel Haberleşme</div>
+                    <p>Enerji analizörlerinden veri çekerken yaşanan anlık veri kayıplarının, PLC scan cycle (tarama zamanı) ve sorgu periyotlarının çakışmasından kaynaklandığını tespit ettim. Python scripti üzerindeki threading yapısını optimize ederek ve sorgu aralıklarına milisaniyelik gecikmeler (delay) ekleyerek veri akışını %100 kararlı hale getirdim.</p>
+                </div>
+                <div class="blog-post">
+                    <h4>VFD Motor Sürücülerinde Kronik Aşırı Akım Hatalarının Önlenmesi</h4>
+                    <div class="date">Mayıs 2026 | Kategori: Sürücü Sistemleri</div>
+                    <p>Ağır yük altında kalkış yapan konveyör motorlarında sürücünün sık sık "Overcurrent" hatasına düşmesi üzerine, rampa kalkış sürelerini (acceleration time) mekanik toleranslar dahilinde optimize ettim. Tork demerajını dengeleyerek hem duruşları engelledim hem de motor sargılarının ömrünü uzattım.</p>
                 </div>
             </div>
         </div>
